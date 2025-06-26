@@ -1,0 +1,13 @@
+Welcome to the code for my Master Thesis for the track Financial Econometrics. This code produces all the results that are presented in the report, either by means of figures or printed to the output box to go into a table. In order to run this code, some additional files and folders are required. These will be discussed below.
+
+In order to run this code, a folder called "Data" and a folder called "Figures" need to be present in the working directory. The Data folder must contain all the required files in order to run the code, while the Figures folder is used to save the generated figures into. The required files in the Data folder are:
+- returns.csv - Contains the daily returns from 2013 until 2024 of the 9 initial stocks the research started with;
+- CaViaR_guesses.csv - Contains the initial guesses for the CaViaR model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_CaViaR variable at the start of the Model section.
+- GARCH_guesses.csv - Contains the initial guesses for the GARCH model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_GARCH variable at the start of the Model section.
+
+- SP100_returns.csv - Contains the daily returns from 2013 until 2024 of the top 100 stocks from the S&P500 index based on market capitalization;
+- CaViaR_guesses_SP100.csv - Contains the initial guesses of the CaViaR model for all sample windows that are used during the research for all 100 stocks that are used. The same applies as stated above for the 9 stocks.
+- GARCH_guesses_SP100.csv - Contains the initial guesses of the GARCH model for all sample windows that are used during the research for all 100 stocks that are used. The same applies as stated above for the 9 stocks.
+- Filtered_VaR_dict.npy - Contains the full dictionary of dynamic VaR estimates for all sample windows for the 100 stocks of the S&P500. Computing this is very resource-intensive, therefore it has been saved to be used every time. This can be toggled in cell 66, almost at the bottom.
+
+The code needs approximately 3 hours to run completely, assuming the initial guesses and dynamic VaR is already computed and saved into files as described above. The code has been commented and each function has a textbox above it explaining what it does and what it takes in. 
