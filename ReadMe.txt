@@ -4,7 +4,6 @@ In order to run this code, a folder called "Data" and a folder called "Figures" 
 - returns.csv - Contains the daily returns from 2013 until 2024 of the 9 initial stocks the research started with;
 - CaViaR_guesses.csv - Contains the initial guesses for the CaViaR model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_CaViaR variable at the start of the Model section.
 - GARCH_guesses.csv - Contains the initial guesses for the GARCH model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_GARCH variable at the start of the Model section.
-
 - SP100_returns.csv - Contains the daily returns from 2013 until 2024 of the top 100 stocks from the S&P500 index based on market capitalization;
 - CaViaR_guesses_SP100.csv - Contains the initial guesses of the CaViaR model for all sample windows that are used during the research for all 100 stocks that are used. The same applies as stated above for the 9 stocks.
 - GARCH_guesses_SP100.csv - Contains the initial guesses of the GARCH model for all sample windows that are used during the research for all 100 stocks that are used. The same applies as stated above for the 9 stocks.
