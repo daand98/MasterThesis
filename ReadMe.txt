@@ -1,4 +1,4 @@
-Welcome to the code for my Master Thesis for the track Financial Econometrics. This code produces all the results that are presented in the report, either by means of figures or printed to the output box to go into a table. In order to run this code, some additional files and folders are required. These will be discussed below.
+Welcome to the GitHub for my Master Thesis for the track Financial Econometrics. The code VaR.ipynb produces all the results that are presented in the report, either by means of figures or printed to the output box to go into a table. In order to run this code, some additional files and folders are required. These will be discussed below.
 
 In order to run this code, a folder called "Data" and a folder called "Figures" need to be present in the working directory. The Data folder must contain all the required files in order to run the code, while the Figures folder is used to save the generated figures into. The required files in the Data folder are:
 - returns.csv - Contains the daily returns from 2013 until 2024 of the 9 initial stocks the research started with;
