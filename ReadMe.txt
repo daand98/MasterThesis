@@ -10,4 +10,4 @@ In order to run this code, a folder called "Data" and a folder called "Figures" 
 - GARCH_guesses_SP100.csv - Contains the initial guesses of the GARCH model for all sample windows that are used during the research for all 100 stocks that are used. The same applies as stated above for the 9 stocks;
 - Filtered_VaR_dict.npy - Contains the full dictionary of dynamic VaR estimates for all sample windows for the 100 stocks of the S&P500. Computing this is very resource-intensive, therefore it has been saved to be used every time. This can be toggled in cell 66, almost at the bottom.
 
-The code needs approximately 3 hours to run completely, assuming the initial guesses and dynamic VaR is already computed and saved into files as described above. The code has been commented and each function has a textbox above it explaining what it does and what it takes in. 
+The code needs approximately 3 hours to run completely, assuming the initial guesses and dynamic VaR are already computed and saved into files as described above. The code has been commented and each function has a textbox above it explaining what it does and what it takes in. 
