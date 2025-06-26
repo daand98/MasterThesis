@@ -1,6 +1,7 @@
 Welcome to the GitHub for my Master Thesis for the track Financial Econometrics. The code VaR.ipynb produces all the results that are presented in the report, either by means of figures or printed to the output box to go into a table. In order to run this code, some additional files and folders are required. These will be discussed below.
 
 In order to run this code, a folder called "Data" and a folder called "Figures" need to be present in the working directory. The Data folder must contain all the required files in order to run the code, while the Figures folder is used to save the generated figures into. The required files in the Data folder are:
+
 - returns.csv - Contains the daily returns from 2013 until 2024 of the 9 initial stocks the research started with;
 - CaViaR_guesses.csv - Contains the initial guesses for the CaViaR model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_CaViaR variable at the start of the Model section.
 - GARCH_guesses.csv - Contains the initial guesses for the GARCH model for the 9 initial stocks. These can also be computed by the search algorithm, but this is very time-consuming. Therefore this is done once, after which these guesses are saved. This can be controlled via the do_gridsearch_GARCH variable at the start of the Model section.
